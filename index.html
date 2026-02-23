@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+  <div class="container">
+    <header class="hero">
+      <p class="badge">Перший проєкт</p>
+
+      <h1>Привіт, я Юра 👋</h1>
+      <p class="lead">
+        Я вчуся робити сайти і хочу вийти на фріланс за 2-4 місяці.
+      </p>
+
+      <div class="actions">
+        <button class="btn btn-primary" type="button">Написати мені</button>
+        <a class="link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+      <p class="message"></p>
+
+      <form class="form hidden">
+        <label>
+          Імʼя
+          <input type="text" name="name" placeholder="Юра" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="yura@email.com" required>
+        </label>
+
+        <label>
+          Повідомлення
+          <textarea name="text" rows="4" placeholder="Привіт! Хочу сайт..." required></textarea>
+        </label>
+
+        <button class="btn submit" type="submit">Надіслати</button>
+      </form>
+    </header>
+
+    <section class="about">
+      <h2>Про мене</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Хто я</h3>
+          <p>Мене звати Юра. Починаю з нуля і вчуся щодня.</p>
+        </div>
+
+        <div class="card">
+          <h3>Ціль</h3>
+          <p>Робити лендинги і брати перші замовлення на фрілансі.</p>
+        </div>
+
+        <div class="card">
+          <h3>Фокус</h3>
+          <p>Акуратний код, адаптив, чистий дизайн без зайвого.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h2 id="modalTitle">Звʼязок зі мною</h2>
+        <button class="modal-close" type="button" aria-label="Закрити">✕</button>
+      </div>
+
+      <p class="modal-text">Заповни форму і натисни “Надіслати”.</p>
+
+      <div class="modal-body"></div>
+    </div>
+  </div>
+  <script type="module" src="/src/script.js"></script>
+
+  </body>
+</html>
