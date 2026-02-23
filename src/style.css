@@ -31,10 +31,16 @@ body {
   margin: 0 0 12px 0;
 }
 
-h1 {
+.title {
   margin: 0 0 8px 0;
   font-size: 36px;
   letter-spacing: -0.02em;
+  color: #3b82f6;
+  transition: all 0.3s ease;
+
+}
+.title:hover {
+  color: #d12891;
 }
 
 .lead {
@@ -212,15 +218,24 @@ h2 {
 
 .modal-close {
   border: 1px solid #242833;
-  background: #0f1320;
-  color: #e8e8ea;
   border-radius: 10px;
-  padding: 6px 10px;
+
+  background: #0f1320;
+
+  color: #3b82f6;
+
+  padding: 6px 12px;
+  
   cursor: pointer;
+
+  transition: all 0.3s ease;
 }
 
 .modal-close:hover {
   filter: brightness(1.1);
+
+  background: #af189b;
+
 }
 
 .modal-text {
